@@ -3,6 +3,7 @@ set -e
 
 if [ ! -z "$TEMPLATE_REPO" ]; then
     echo "Overriding default slate template with the provided ones";
+    echo "Using 4aba25b49b456739f97752292b7ab097edf8713f"
     mkdir /usr/src/template || echo "Template folder already exists"
     cd /usr/src/template
     git init
