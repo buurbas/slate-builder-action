@@ -16,5 +16,5 @@ fi
 
 if [[ "$CNAME" != "" ]]; then
     echo "Creating CNAME file"
-    echo $CNAME > $DOC_BASE_FOLDER/CNAME
+    echo $CNAME > $DOC_BASE_FOLDER/build/CNAME
 fi
