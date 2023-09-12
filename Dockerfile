@@ -5,6 +5,7 @@ LABEL "com.github.actions.description"="Build repository md files using the slat
 LABEL "com.github.actions.icon"="book-open"
 LABEL "com.github.actions.color"="blue"
 
+ENV CNAME=${CNAME:-""}
 ENV DOC_BASE_FOLDER=${DOC_BASE_FOLDER:-"/usr/src/doc"}
 ENV ZIP_BUILD=${ZIP_BUILD:-"true"}
 

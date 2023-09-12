@@ -13,3 +13,8 @@ if [[ "$ZIP_BUILD" == "true" ]]; then
     echo "Zipping Slate documentation"
     zip -r $DOC_BASE_FOLDER/documentation.zip $DOC_BASE_FOLDER/build
 fi
+
+if [[ "$CNAME" != "" ]]; then
+    echo "Creating CNAME file"
+    echo $CNAME > $DOC_BASE_FOLDER/CNAME
+fi
